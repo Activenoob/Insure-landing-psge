@@ -1,0 +1,22 @@
+//color
+$darkViolet:#2d2640;
+$grayishBlue:#95a9c6;
+$veryDarkViolet: #2b272f;
+$darkGrayishViolet: #837d87;
+$veryLightGray: #fafafa;
+
+// Breakpoints
+$breakpoints: (
+    small: 357px,
+    medium: 699px,
+    large: 999px,
+    xlarge: 1440px
+);
+
+@mixin breakpoint($size){
+    $breakpoint-value: map-get($breakpoints, $size);
+    
+    @media screen and (min-width: $breakpoint-value){
+        @content;
+    }
+}

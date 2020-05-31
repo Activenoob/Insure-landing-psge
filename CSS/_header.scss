@@ -1,0 +1,44 @@
+.header{
+    background-color: #ffffff;
+    padding: 20px 165px 20px 168px;
+    font-size: 1rem;
+    
+
+    &__grid{
+        display: grid;
+        grid-template-columns: minmax(113px, 1fr) repeat(4, auto);
+        gap: 28px;
+        
+
+        img{
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+       > a{
+            &:not(:last-child){
+                padding-top: 15px;
+                padding-bottom: 15px;
+                color: $darkGrayishViolet;
+            }
+        }
+
+
+        a:last-child{
+            
+            color: $veryDarkViolet;
+            border: 1px solid #2b272f;
+            text-align: center;
+            padding: 14px 29px 14px 29px;
+
+            &:hover{
+                background-color: $veryDarkViolet ;
+                color: white;
+                font-weight: 700;
+            }
+        }
+    }
+    
+    
+
+}
